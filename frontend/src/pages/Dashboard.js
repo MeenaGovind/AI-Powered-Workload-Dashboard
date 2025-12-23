@@ -9,7 +9,7 @@ export default function Dashboard() {
   const analyze = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5000/api/analyze-workload", {
+      const res = await fetch("https://ai-powered-workload-dashboard-1.onrender.com/api/analyze-workload", {
         method: "POST"
       });
 

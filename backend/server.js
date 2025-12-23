@@ -114,5 +114,7 @@ app.post("/api/analyze-workload", async (_, res) => {
     res.status(500).json({ error: "AI failed", details: error?.response?.data || error.message });
   }
 });
-
+app.get("/test-hook",(req,res)=>{
+  res.json({message:"Working"});
+})
 app.listen(5000, () => console.log("Backend running on port 5000"));
